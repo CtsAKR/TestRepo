@@ -1,0 +1,38 @@
+<mvc:View controllerName="sap.com.project2.controller.View3"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core" displayBlock="true">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content>
+                        <f:SimpleForm id="_IDGenSimpleForm1" title="Input Form" layout="ResponsiveGridLayout">
+                            <f:content>
+                                <Label id="_IDGenLabel1" text="Name"/>
+                                <Input id ="input1" placeholder="Abc"/>
+                                <Label id="_IDGenLabel2" text="Email"/>
+                                <Input id ="input2" placeholder="Gmail/Ymail"/>
+                                <Label id="_IDGenLabel3" text="Loaction"/>
+                                <Input id ="input3" placeholder="Loc"/>
+                                <Label id="_IDGenLabel4" text="Position"/>
+                                <Input id ="input4" placeholder="Pos"/>
+                                <Label id="_IDGenLabel5" text="Package"/>
+                                <Input id ="input5" placeholder="LPA"/>
+                            </f:content>
+                            <f:content>
+                                <Button text="Submit" type="Accept" press="onPess" id="button0"/>
+                                <Button xmlns="sap.m" text="Reset" id="button1" icon="sap-icon://reset"/>
+                                <Button id="edit" text="Edit" enabled="false" />
+                                <Button id="save" text="Save" type="Emphasized" visible="false" press="handleSavePress" />
+                                <Button id="cancel" text="Cancel" visible="false" press="handleCancelPress" />
+                            </f:content>
+                        </f:SimpleForm>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

@@ -1,0 +1,26 @@
+{
+    "name": "extension-pack",
+    "version": "1.0.8",
+    "publisher": "sap-partner-eng",
+    "engines": {
+        "vscode": "^1.26.0"
+    },
+    "license": "MIT",
+    "displayName": "SAP PE Extension Pack",
+    "description": "Curated Partner Development Environment.",
+    "icon": "sap-partner-eng.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/andrewlunde/sap-partner-eng-extension-pack"
+	},
+    "categories": [
+        "Extension Packs"
+    ],
+    "keywords": [
+        "python", "sappe", "sap", "sapbas", "basextra", "basextras", "partner", "partnereng", "partnerengineering"
+    ],
+    "extensionPack": [
+        "ms-python.python",
+	"sap-partner-eng.sap-bas-extras"
+    ]
+}

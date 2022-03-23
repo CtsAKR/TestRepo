@@ -1,0 +1,23 @@
+[
+    {
+        "name":"Harry",
+        "email":"harry@gmail.com",
+        "location":"LA",
+        "pos":"SD",
+        "package":"10Lpa"
+    },
+    {
+        "name":"John",
+        "email":"john@gmail.com",
+        "location":"CAL",
+        "pos":"JD",
+        "package":"5Lpa"
+    },
+    {
+        "name":"White",
+        "email":"white@gmail.com",
+        "location":"SAN",
+        "pos":"HR",
+        "package":"3Lpa"
+    }
+]

@@ -1,0 +1,81 @@
+<mvc:View controllerName="sap.com.project2.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core" displayBlock="true">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content>
+                        <!-- <Input xmlns="sap.m" id="input0" placeholder="Enter First Name"/> -->
+                        <!-- <Input xmlns="sap.m" id="input10" placeholder="Enter Last Name"/> -->
+                        <!-- <html:div class="btn"> -->
+
+
+                        <Switch state="true" id="s2"/>
+
+                        <IconTabBar id="idIconTabBar" select=".onFilterSelect" class="sapUiResponsiveContentPadding">
+                            <items>
+                                <IconTabFilter id="_IDGenIconTabFilter2" icon="sap-icon://key" iconColor="Positive" count="" text="Password" key="Ok" />
+                                <IconTabFilter id="_IDGenIconTabFilter3" icon="sap-icon://customer" iconColor="Critical" count="" text="Form" key="Heavy">
+                                </IconTabFilter>
+                                <IconTabFilter id="_IDGenIconTabFilter4" icon="sap-icon://table-view" iconColor="Negative" count="" text="Table" key="Table">
+                                    <!-- <Table id="idProductsTable" inset="false" items="{ path: '/ProductCollection', sorter: { path: 'Name' } }"> -->
+                                    <!-- <Table id="idProductsTable" inset="false" items="{/}"> -->
+                                    <Table id="idProductsTable" inset="false" items="{/Employees}">
+                                        <headerToolbar>
+                                        </headerToolbar >
+                                        <infoToolbar>
+                                            <OverflowToolbar id="_IDGenOverflowToolbar2">
+                                                <Label id="_IDGenLabel6" text="Demonstration of Table with dynamic data"/>
+                                            </OverflowToolbar>
+                                        </infoToolbar >
+                                        <columns>
+                                            <Column id="_IDGenColumn1">
+                                                <Text id="_IDGenText1" text="Emp ID" />
+                                            </Column>
+                                            <Column id="_IDGenColumn2">
+                                                <Text id="_IDGenText2" text="{i18n>Name}" />
+                                            </Column>
+                                            <Column id="_IDGenColumn3">
+                                                <Text id="_IDGenText3" text="Last  Name" />
+                                            </Column>
+                                            <Column id="_IDGenColumn4">
+                                                <Text id="_IDGenText4" text="Location" />
+                                            </Column>
+                                            <Column id="_IDGenColumn5" hAlign="End">
+                                                <Text id="_IDGenText5" text="PIN" />
+                                            </Column>
+                                        </columns>
+                                        <items >
+                                            <ColumnListItem id="_IDGenColumnListItem1" vAlign="Middle" press="onPressTable" type="Navigation">
+                                                <cells>
+                                                    <!-- <Text id="_IDGenText6" text="{name}" />
+                                                    <Text id="_IDGenText8" text="{location}" />
+                                                    <Text id="_IDGenText9" text="{pos}" />
+                                                    <Text id="_IDGenText10" text="{package}" /> -->
+                                                    <Text id="_IDGenText6" text="{EmployeeID}" />
+                                                    <Text id="_IDGenText7" text="{FirstName}" />
+                                                    <Text id="_IDGenText8" text="{LastName}" />
+                                                    <Text id="_IDGenText9" text="{Country}" />
+                                                    <Text id="_IDGenText10" text="{PostalCode}" />
+                                                </cells>
+                                            </ColumnListItem>
+                                        </items>
+                                    </Table>
+                                </IconTabFilter>
+                            </items>
+                        </IconTabBar>
+                    </content>
+                    <footer>
+                        <Toolbar id="_IDGenToolbar1">
+                            <Button xmlns="sap.m" text="Button" id="button0" press="onNavTo"/>
+                        </Toolbar>
+                    </footer>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
